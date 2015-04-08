@@ -4,8 +4,5 @@ Template.eventsTemplate.helpers({
     return Events.find({}, {
       sort: { name: 1 }
     });
-  },
-  getUserName: function(userId) {
-    return Users.findOne(userId).name;
   }
 });
