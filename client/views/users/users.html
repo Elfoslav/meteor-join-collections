@@ -1,0 +1,13 @@
+<template name="users">
+  <div style="display: inline-block; width: 45%; vertical-align: top;">
+    <h2>Users</h2>
+    {{#each users}}
+      <p><a href="{{pathFor 'user' id=_id}}">{{name}}</a></p>
+      <ul>
+        {{#each userEvents _id}}
+          <li>{{name}}</li>
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</template>

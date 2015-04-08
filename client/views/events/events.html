@@ -1,0 +1,13 @@
+<template name="eventsTemplate">
+  <div style="display: inline-block; width: 45%;">
+    <h2>Events</h2>
+    {{#each events}}
+      <p><a href="{{pathFor 'eventTemplate' id=_id}}">{{name}}</a></p>
+      <ul>
+        {{#each users}}
+          <li>{{getUserName this}}</li>
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</template>

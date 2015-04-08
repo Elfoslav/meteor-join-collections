@@ -1,0 +1,10 @@
+<template name="user">
+  <h2>User: {{user.name}}</h2>
+  <h3>Events</h3>
+  <ul>
+    {{#each events}}
+      <li>{{name}}</li>
+    {{/each}}
+  </ul>
+  <p><a href="{{pathFor 'home'}}">&larr; Back to homepage</a></p>
+</template>
